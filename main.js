@@ -6,8 +6,8 @@ const pickIt = arr => {
   const even = [];
   for (let i = 0; i < arr.length; i++) {
     if ( arr[i] % 2 === 0 ) 
-    { even.push(arr[i]); }
-    else { odd.push(arr[i]); }
+    { even.push(arr[i]) }
+    else { odd.push(arr[i]) }
   }
   return [odd, even];
 }
@@ -19,7 +19,7 @@ console.log(pickIt([1,2,4,5,3]));
 const grabDoll = dolls => {
   const bag = [];
   for (let i=0;i<dolls.length;i++) {
-    let doll = dolls[i]
+    let doll = dolls[i];
     if (doll == 'Hello Kitty' || doll == 'Barbie doll') {
       bag.push(doll);
     } else {
